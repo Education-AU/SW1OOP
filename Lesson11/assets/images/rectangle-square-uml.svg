@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="396" viewBox="0 0 640 396">
+  <title>Square inherits from Rectangle</title>
+  <desc>A hollow generalization arrow points from Square to Rectangle. The member prefixes plus, hash, and minus indicate public, protected, and private access.</desc>
+  <g stroke="#243b53" stroke-width="2">
+    <path d="M320 284V232" fill="none" />
+    <path d="M320 210L309 232H331Z" fill="#fff" />
+  </g>
+  <g fill="#10233f" font-family="Consolas, monospace" font-size="18">
+    <g transform="translate(8 8)">
+      <rect width="624" height="202" fill="#fff" />
+      <rect width="624" height="38" fill="#e8eef5" />
+      <path d="M0 0H624V202H0Z M0 38H624 M0 130H624" fill="none" stroke="#243b53" stroke-width="2" />
+      <text x="312" y="27" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold">Rectangle</text>
+      <text x="15" y="58"># color: char</text>
+      <text x="15" y="80">- height: double</text>
+      <text x="15" y="102">- width: double</text>
+      <text x="15" y="124">- age: int</text>
+      <text x="15" y="150">+ rectangle(height: double, width: double, color: char)</text>
+      <text x="15" y="172">+ area(): double</text>
+      <text x="15" y="194"># circumference(): double</text>
+    </g>
+    <g transform="translate(112 284)">
+      <rect width="416" height="104" fill="#fff" />
+      <rect width="416" height="38" fill="#e8eef5" />
+      <path d="M0 0H416V104H0Z M0 38H416 M0 50H416" fill="none" stroke="#243b53" stroke-width="2" />
+      <text x="208" y="27" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold">Square</text>
+      <text x="15" y="70">+ square(size: double, color: char)</text>
+      <text x="15" y="92">+ print(): void</text>
+    </g>
+  </g>
+</svg>

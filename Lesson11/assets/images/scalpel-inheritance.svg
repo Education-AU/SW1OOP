@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="290" viewBox="0 0 520 290">
+  <title>Incorrect inheritance from Scalpel</title>
+  <g stroke="#243b53" stroke-width="2" fill="#fff">
+    <path d="M130 218V195H390V218 M260 195V151" fill="none"/>
+    <path d="M260 151l-10 20h20Z"/>
+    <rect x="120" y="6" width="280" height="145"/>
+    <rect x="15" y="218" width="230" height="62"/>
+    <rect x="275" y="218" width="230" height="62"/>
+    <path d="M120 6h280v36H120Z M15 218h230v36H15Z M275 218h230v36H275Z" fill="#e8eef5"/>
+    <path d="M120 118h280 M15 267h230 M275 267h230" fill="none"/>
+  </g>
+  <g fill="#10233f" font-family="sans-serif" font-size="24" font-weight="bold" text-anchor="middle">
+    <text x="260" y="32">Scalpel</text>
+    <text x="130" y="244">Foot Therapist</text>
+    <text x="390" y="244">Surgeon</text>
+  </g>
+  <g fill="#10233f" font-family="Consolas, monospace" font-size="18">
+    <text x="135" y="64">weight: double</text>
+    <text x="135" y="86">length: double</text>
+    <text x="135" y="108">material: int</text>
+    <text x="135" y="140">is_autoclaved(): bool</text>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="370" height="475" viewBox="0 0 370 475">
+  <title>Vehicle, car, and hybrid car hierarchy</title>
+  <g stroke="#243b53" stroke-width="2" fill="#fff">
+    <path d="M185 178V140 M185 329V291" fill="none"/>
+    <path d="M185 140l-10 20h20Z M185 291l-10 20h20Z"/>
+    <rect x="20" y="6" width="330" height="134"/>
+    <rect x="20" y="178" width="330" height="113"/>
+    <rect x="20" y="329" width="330" height="134"/>
+    <path d="M20 6h330v36H20Z M20 178h330v36H20Z M20 329h330v36H20Z" fill="#e8eef5"/>
+    <path d="M20 89h330 M20 261h330 M20 412h330" fill="none"/>
+  </g>
+  <g fill="#10233f" font-family="sans-serif" font-size="24" font-weight="bold" text-anchor="middle">
+    <text x="185" y="32">vehicle</text>
+    <text x="185" y="204">car</text>
+    <text x="185" y="355">hybrid_car</text>
+  </g>
+  <g fill="#10233f" font-family="Consolas, monospace" font-size="18">
+    <text x="35" y="61">- fuel_consumption: double</text>
+    <text x="35" y="82">- fuel_capacity: double</text>
+    <text x="35" y="109">+ range(): double</text>
+    <text x="35" y="130">+ to_string(): string</text>
+    <text x="35" y="233">- make: string</text>
+    <text x="35" y="254">- model: string</text>
+    <text x="35" y="281">+ to_string(): string</text>
+    <text x="35" y="384">- battery_capacity: double</text>
+    <text x="35" y="405">- battery_efficiency: double</text>
+    <text x="35" y="432">+ to_string(): string</text>
+    <text x="35" y="453">+ range(): double</text>
+  </g>
+</svg>

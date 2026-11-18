@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="824" height="390" viewBox="0 0 824 390">
+  <title>Employee and Customer inherit from Person</title>
+  <desc>A shared generalization line from Employee and Customer ends in a hollow triangle pointing to Person.</desc>
+  <g stroke="#243b53" stroke-width="2">
+    <path d="M198 268V238H626V268 M412 238V216" fill="none" />
+    <path d="M412 194L401 216H423Z" fill="#fff" />
+  </g>
+  <g fill="#10233f" font-family="Consolas, monospace" font-size="18">
+    <g transform="translate(282 8)">
+      <rect width="260" height="186" fill="#fff" />
+      <rect width="260" height="38" fill="#e8eef5" />
+      <path d="M0 0H260V186H0Z M0 38H260 M0 86H260" fill="none" stroke="#243b53" stroke-width="2" />
+      <text x="130" y="27" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold">Person</text>
+      <text x="15" y="58">- cpr: long</text>
+      <text x="15" y="80">- name: string</text>
+      <text x="15" y="106">+ get_name(): string</text>
+      <text x="15" y="128">+ get_cpr(): long</text>
+      <text x="15" y="150">+ get_age(): int</text>
+      <text x="15" y="172">+ has_birthDay(): bool</text>
+    </g>
+    <g transform="translate(8 268)">
+      <rect width="380" height="92" fill="#fff" />
+      <rect width="380" height="38" fill="#e8eef5" />
+      <path d="M0 0H380V92H0Z M0 38H380 M0 65H380" fill="none" stroke="#243b53" stroke-width="2" />
+      <text x="190" y="27" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold">Employee</text>
+      <text x="15" y="58">- salary: double</text>
+      <text x="15" y="85">+ annual_income(): double</text>
+    </g>
+    <g transform="translate(436 268)">
+      <rect width="380" height="114" fill="#fff" />
+      <rect width="380" height="38" fill="#e8eef5" />
+      <path d="M0 0H380V114H0Z M0 38H380 M0 87H380" fill="none" stroke="#243b53" stroke-width="2" />
+      <text x="190" y="27" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold">Customer</text>
+      <text x="15" y="58">- credit_max: double</text>
+      <text x="15" y="80">- credit: double</text>
+      <text x="15" y="107">+ can_buy_on_credit(amount): bool</text>
+    </g>
+  </g>
+</svg>

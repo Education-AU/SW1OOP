@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="370" height="202" viewBox="0 0 370 202">
+  <title>B and C inherit from A</title>
+  <g stroke="#243b53" stroke-width="2" fill="#fff">
+    <path d="M90 130V108H280V130 M185 108V68" fill="none"/>
+    <path d="M185 68l-10 20h20Z"/>
+    <rect x="105" y="6" width="160" height="62"/>
+    <rect x="10" y="130" width="160" height="62"/>
+    <rect x="200" y="130" width="160" height="62"/>
+    <path d="M105 6h160v36H105Z M10 130h160v36H10Z M200 130h160v36H200Z" fill="#e8eef5"/>
+    <path d="M105 55h160 M10 179h160 M200 179h160" fill="none"/>
+  </g>
+  <g fill="#10233f" font-family="sans-serif" font-size="24" font-weight="bold" text-anchor="middle">
+    <text x="185" y="32">A</text>
+    <text x="90" y="156">B</text>
+    <text x="280" y="156">C</text>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="414" viewBox="0 0 540 414">
+  <title>Overly specific colored shape hierarchy</title>
+  <defs>
+    <g id="class-box" stroke="#243b53" stroke-width="2" fill="#fff">
+      <rect width="156" height="90"/>
+      <path d="M0 0h156v36H0Z" fill="#e8eef5"/>
+      <path d="M0 63h156" fill="none"/>
+      <g stroke="none" fill="#10233f" font-family="Consolas, monospace" font-size="16">
+        <text x="11" y="55">Attribute</text>
+        <text x="11" y="82">Operation</text>
+      </g>
+    </g>
+  </defs>
+  <g stroke="#243b53" stroke-width="2" fill="#fff">
+    <path d="M174 162V139H442V162 M308 139V96 M84 318V295H264V318 M174 295V252" fill="none"/>
+    <path d="M308 96l-10 20h20Z M174 252l-10 20h20Z"/>
+  </g>
+  <use href="#class-box" x="230" y="6"/>
+  <use href="#class-box" x="96" y="162"/>
+  <use href="#class-box" x="364" y="162"/>
+  <use href="#class-box" x="6" y="318"/>
+  <use href="#class-box" x="186" y="318"/>
+  <g fill="#10233f" font-family="sans-serif" font-size="22" font-weight="bold" text-anchor="middle">
+    <text x="308" y="32">Shape</text>
+    <text x="174" y="188">Triangle</text>
+    <text x="442" y="188">Square</text>
+    <text x="84" y="344">RedTriangle</text>
+    <text x="264" y="344">Blue triangle</text>
+  </g>
+</svg>

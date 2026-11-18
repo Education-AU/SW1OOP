@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="530" height="270" viewBox="0 0 530 270">
+  <title>Saving account and Budget Account inherit from Account</title>
+  <g stroke="#243b53" stroke-width="2" fill="#fff">
+    <path d="M130 194V171H400V194 M265 171V125" fill="none"/>
+    <path d="M265 125l-10 20h20Z"/>
+    <rect x="84" y="6" width="362" height="119"/>
+    <rect x="10" y="194" width="240" height="62"/>
+    <rect x="280" y="194" width="240" height="62"/>
+    <path d="M84 6h362v36H84Z M10 194h240v36H10Z M280 194h240v36H280Z" fill="#e8eef5"/>
+    <path d="M84 73h362 M10 243h240 M280 243h240" fill="none"/>
+  </g>
+  <g fill="#10233f" font-family="sans-serif" font-size="24" font-weight="bold" text-anchor="middle">
+    <text x="265" y="32">Account</text>
+    <text x="130" y="220">Saving account</text>
+    <text x="400" y="220">Budget Account</text>
+  </g>
+  <g fill="#10233f" font-family="Consolas, monospace" font-size="18">
+    <text x="99" y="64">balance: double</text>
+    <text x="99" y="95">withdraw(amount: double): void</text>
+    <text x="99" y="116">deposit(amount: double): void</text>
+  </g>
+</svg>

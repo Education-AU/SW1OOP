@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="392" viewBox="0 0 940 392">
+  <title>Extended account hierarchy</title>
+  <desc>Withdrawable and Pension derive from the base class. NemAccount and BudgetAccount derive from Withdrawable; WhatEverPension and Rate Pension derive from Pension.</desc>
+  <g stroke="#243b53" stroke-width="2" fill="#fff">
+    <path d="M235 163V142H705V163 M470 142V108 M125 317V296H345V317 M235 296V265 M595 317V296H815V317 M705 296V225" fill="none"/>
+    <path d="M470 108l-10 20h20Z M235 265l-10 20h20Z M705 225l-10 20h20Z"/>
+    <rect x="285" y="6" width="370" height="102"/>
+    <rect x="50" y="163" width="370" height="102"/>
+    <rect x="595" y="163" width="220" height="62"/>
+    <rect x="25" y="317" width="200" height="62"/>
+    <rect x="245" y="317" width="200" height="62"/>
+    <rect x="495" y="317" width="200" height="62"/>
+    <rect x="715" y="317" width="200" height="62"/>
+    <path d="M285 6h370v36H285Z M50 163h370v36H50Z M595 163h220v36H595Z M25 317h200v36H25Z M245 317h200v36H245Z M495 317h200v36H495Z M715 317h200v36H715Z" fill="#e8eef5"/>
+    <path d="M285 75h370 M50 232h370 M595 212h220 M25 366h200 M245 366h200 M495 366h200 M715 366h200" fill="none"/>
+  </g>
+  <g fill="#10233f" font-family="sans-serif" font-size="24" font-weight="bold" text-anchor="middle">
+    <text x="470" y="32">Class</text>
+    <text x="235" y="189">Withdrawable</text>
+    <text x="705" y="189">Pension</text>
+    <text x="125" y="343">NemAccount</text>
+    <text x="345" y="343">BudgetAccount</text>
+    <text x="595" y="343">WhatEverPension</text>
+    <text x="815" y="343">Rate Pension</text>
+  </g>
+  <g fill="#10233f" font-family="Consolas, monospace" font-size="18">
+    <text x="300" y="64">balance: double</text>
+    <text x="300" y="97">deposit(amount: double): void</text>
+    <text x="65" y="221">balance: double</text>
+    <text x="65" y="254">withdraw(amount: double): void</text>
+  </g>
+</svg>

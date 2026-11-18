@@ -1,0 +1,87 @@
+name: Deploy slide decks to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  packages: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 20
+          cache: npm
+          registry-url: https://npm.pkg.github.com
+          scope: '@michelvhoward'
+      - run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_GH_TOKEN }}
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium
+      - name: Build slide decks
+        run: |
+          mkdir -p site
+          cat > site/index.html <<'EOF'
+          <!doctype html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Slide decks</title>
+          </head>
+          <body>
+            <h1>Slide decks</h1>
+            <ul>
+          EOF
+
+          deck_count=0
+          for slides_dir in */slides; do
+            [ -d "$slides_dir" ] || continue
+            deck="${slides_dir%/slides}"
+            (
+              cd "$deck"
+              node ../node_modules/@michelvhoward/templates/build.js --project
+              mkdir -p "../site/$deck/slides"
+              cp -R dist/. "../site/$deck/slides/"
+              cp "../site/$deck/slides/slides.html" "../site/$deck/slides/index.html"
+            )
+            printf '      <li><a href="%s/slides/">%s</a></li>\n' "$deck" "$deck" >> site/index.html
+            deck_count=$((deck_count + 1))
+          done
+
+          if [ "$deck_count" -eq 0 ]; then
+            echo "No slide decks found. Expected top-level */slides directories." >&2
+            exit 1
+          fi
+
+          cat >> site/index.html <<'EOF'
+            </ul>
+          </body>
+          </html>
+          EOF
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
