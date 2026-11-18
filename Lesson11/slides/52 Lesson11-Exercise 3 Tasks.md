@@ -19,4 +19,5 @@ while (true) {
 }
 ```
 
-If memory use keeps growing, the repeated assignment may be leaking memory. Run in debug mode to monitor it, then stop the program manually.
+If memory use keeps growing, the repeated assignment may be leaking memory. Run in debug mode to monitor it, then stop
+the program manually. 
