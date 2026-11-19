@@ -9,7 +9,11 @@ template: default
 
 Use deep copies for both classes.
 
-To test the assignment operator, you can run the code:
+Testing rule of three implementation in CLion is not that easy.
+
+For assignment operator :
+
+Try to run the following code and monitor the process in process explorer
 
 ```cpp
 auto* c = new child(10, 3);
@@ -19,5 +23,4 @@ while (true) {
 }
 ```
 
-If memory use keeps growing, the repeated assignment may be leaking memory. Run in debug mode to monitor it, then stop
-the program manually. 
+If memory use keeps growing, the repeated assignment may be leaking memory.
